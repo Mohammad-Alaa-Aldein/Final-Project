@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My CV</title>
+
+	<style>
+			body{
+			width: 800px;
+			margin: 0 auto;
+
+		}
+		
+		.container1{
+			display: flex;
+		}
+
+		.header{
+			display: flex;
+			background-image: url("back.jpeg");
+			color: white;
+			margin-bottom: 80px;
+
+		}
+
+		.header-content{
+			width:60%;
+			position: relative;
+			left: 30px;
+
+		}
+
+		.image-div{
+			position: relative;
+			width: 30%;
+			left: 90px;
+		}
+
+		.image{
+			width: 220px;
+			height: 220px;
+			position: absolute;
+			top: 40px;
+			right: 50px;
+			background-image: url("back.jpeg");
+		}
+
+		.experience{
+			width: 60%;
+		}
+
+		.experience-content{
+			display: grid;
+			grid-template-columns: 100px 300px;
+			grid-template-rows: 1fr 1fr 1fr;
+			grid-gap: 10px;
+
+		}
+
+		.work1{
+			grid-area: 1/1/1/1;
+			color: #1c912d;
+			font-weight: bold;
+		}
+
+		.work2{
+			grid-area: 1/2/1/2;
+			margin-top: -1px;
+		}
+		
+		.work3{
+			grid-area: 2/1/2/1;
+			color: #1c912d;
+			font-weight: bold;
+		}		
+
+		.work4{
+			grid-area: 2/2/2/2;
+			margin-top: -1px;
+
+		}
+
+		.work5{
+			grid-area:3/1/3/1;
+			color: #1c912d;
+			font-weight: bold;
+		}
+		
+		.work6{
+			grid-area: 3/2/3/2;
+			margin-top: -1px;
+		}		
+
+		label{
+			margin-right: 10px;
+		}
+
+		.team{
+			margin-right:85px; 
+		}
+
+		progress{
+			height: 5px;
+			background: red;
+			margin-bottom: 5px;
+		}
+
+		.education{
+			width: 60%;
+		}
+
+		.education-content{
+			display: grid;
+			grid-template-columns: 100px 300px;
+			grid-gap: 10px;
+		}
+		.container2{
+			display: flex;
+
+		}
+
+		.courses{
+			width: 60%;
+		}
+
+		.courses-content{
+			display: grid;
+			grid-template-columns: 100px 300px;
+			grid-template-rows:  1fr 1fr 1fr;
+		}
+
+		.volunteering-content{
+			display: grid;
+			grid-template-columns: 100px 230px;
+		}
+
+		.container3{
+			display: flex;
+		}	
+
+		.volunteering{
+			width: 38%;
+		}
+
+		footer{
+			display: flex;
+			justify-content: space-around;
+			background-image: url("back.jpeg");
+			padding-top:50px; 
+			padding-bottom: 50px;
+			color: white;
+		}
+
+		.font-colors{
+			color: #1c912d;
+			font-weight: bold;
+		}
+
+	</style>
+</head>
+
+
+<body>
+	<div class="header">
+		<div class="header-content">
+			<h1>Mohammad Alaa Aldein</h1>
+			<h2>Web Developer</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat.</p>
+		</div>
+
+		<div class="image-div">
+			
+			<img class="image" src="mohammad.jpeg">
+		</div>
+		
+		</div>
+
+
+		<div class="container1">
+	<div class="experience">
+		
+		<div>
+			<h2>EXPERIENCE</h2>
+		</div>
+
+		<div class="experience-content">
+
+			<span class="work1">IT Support <br> Ruwwad <br>2014 - 2016</span>
+
+			<p class="work2">IT Technician & supporter at Ruwwad for 1 year working on software,
+			Hardware, Network, Data entry, Lab admin, Training volunteers and
+			community service.
+			Volunteer for 3 years at Ruwwad at same tasks.</p>
+		
+
+		
+			<span class="work3">Quick Tech <br>Creator <br>2018 - now</span>
+		
+			<p class="work4">Creator and Founder Quick Tech, Personal business, that provide technical
+			services on alpl computers, PlayStation and mobile 	phones, as well as the sale of
+			accessories related to the above.</p>
+		
+
+		
+			<span class="work5">Reesha <br>Creator<br>2014 - 2018</span>
+
+			<p class="work6">Creator and Founder Reesha, Youth development Initiative that target youth in
+			Jordan.
+			Reesha develop youth by focusing on education and extracurricular
+			activities for evolution of their intellectual level .</p>
+		
+		</div>
+	</div>
+
+
+	<div class="skills">
+
+		<h2>PROFESIONAL SKILLS</h2>	
+		<br>
+		<ul>
+			<li>IT Technican</li>
+			<li>Web Developer</li>
+		</ul>	
+
+		<br><br>
+
+		<h2>PERSONAL SKILLS </h2>
+		<br><br>
+		<label> Communication Skills</label>
+		<progress value="80" max="100"></progress>
+
+		<br>
+
+		<label class="team">Teamwork</label>
+		<progress value="90" max="100"></progress>
+
+	</div>
+	</div>
+
+	<br><br>
+
+	<div class="container2">
+	<div class=" education">
+		<h2>Education</h2>
+
+		<div class="education-content">
+			<p class="font-colors">2014 - 2016</p>
+			<p>Diploma of Pharmacy <br> Al-Quds College</p>
+		</div>
+	</div>
+
+
+	<div>
+		<h2>AWARD</h2>
+
+		<div class="award">
+			<p>Entrepreneurship Prize 2nd<br>Ruwwad / 2018 </p>
+			<p>Social Entrepreneurship Prize / 2nd <br>Action Aid</p>
+		</div>
+	</div>
+	</div>
+
+	<br><br>
+
+	<div class="container3">
+	<div class="courses">
+		<h2>Courses</h2>	
+
+		<div class="courses-content">
+		
+			<p class="font-colors">2019 - 2020</p>
+			<p>Orange Coding Academy Training <br> HTML, CSS, JAVA & Python</p>
+
+			<p class="font-colors"> 2017 - 2018</p>
+			<p> Entrepreneurship Training <br> 2nd place prize - Ruwwad </p>
+
+			<p class="font-colors">2016</p>
+			<p>Aramex Learning Package - include: <br>Communication skills, Customers service,
+ 			Work ethics, CV writing & Interviewes.</p>
+
+			<p class="font-colors">2015</p>
+			<p>ICDL</p>
+
+			<p class="font-colors"> 2015 - 2015</p>
+			<p>Social Entrepreneurship <br> 2nd prize - ActionAid </p>
+
+			<p class="font-colors">2016</p>
+			<p>Entrepreneurship <br> ZINC</p>
+		</div>
+	</div>
+
+
+	<div class="volunteering">
+		<h2>Volunteering</h2>
+
+		<div class="volunteering-content">
+			
+			<p class="font-colors">2014 - 2018</p>
+			<p>Ruwwad <br><br> Volunteer at Ruwwad since 2014 until now in many fields : <br>
+			1- IT Support
+			2- Community Phychosocial Support
+			3- Community Service </p>
+
+			<p class="font-colors">2014 - 2016</p>
+			<p>Al-Quds College <br><br> Member of the local youth council</p>
+
+		</div>
+	</div>	
+	</div>
+
+	<br><br>
+
+	<footer>
+		<span>00962777519973</span>
+		<span>mohammad.aladin996@gmail.com</span>
+		<span>Mohammad Alaa Aldein</span>
+
+	</footer>
+</body>
+</html>
